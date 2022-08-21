@@ -8,7 +8,7 @@ const Home = () => {
       <div className="text-zone">
         <h1>Hi, <br /> I'm
           <img src={LogoTitle} alt="developer" />
-          kal
+          omeone called kal
           <br />
           web developer
         </h1>
