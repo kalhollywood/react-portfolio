@@ -6,35 +6,27 @@ import emailjs from '@emailjs/browser'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const refForm = useRef()
+  const form = useRef()
 
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
+      console.log("hello")
     }, 3000)
   }, [])
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault()
 
-    emailjs
-      .sendForm(
-        'gmail',
-        '1bEXXNm7c17bivL1q',
-        refForm.current,
-        'service_8f8da4e'
-      )
-      .then(
-        () => {
-          alert('Message sent')
-          window.location.reload(false)
-        },
-        () => {
-          alert('Failed to send message')
-        }
-      )
-
-
+    await emailjs.sendForm("service_8f8da4e", "template_oiobccy", form.current, '1bEXXNm7c17bivL1q').then(
+      () => {
+        alert('Message sent')
+        window.location.reload(false)
+      },
+      () => {
+        alert('Failed to send message')
+      }
+    )
   }
 
   return (
@@ -51,7 +43,7 @@ const Contact = () => {
             Please submit the form below to get in touch with me.
           </p>
           <div className='contact-form'>
-            <form ref={refForm} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input placeholder="Name" type="text" name="name" required />
