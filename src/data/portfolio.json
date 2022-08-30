@@ -1,7 +1,19 @@
 {
   "portfolio": [
     {
-      "cover": "/portfolio/1/one.png",
+      "cover": "/portfolio/1/turnup1.png",
+      "title": "Turn Up",
+      "description": "React, JSX, etc",
+      "url": "http://google.com"
+    },
+    {
+      "cover": "/portfolio/1/turnup1.png",
+      "title": "Turn Up",
+      "description": "React, JSX, etc",
+      "url": "http://google.com"
+    },
+    {
+      "cover": "/portfolio/1/turnup1.png",
       "title": "Turn Up",
       "description": "React, JSX, etc",
       "url": "http://google.com"

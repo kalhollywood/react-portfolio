@@ -28,7 +28,7 @@ const About = () => {
               idx={15}
             />
           </h1>
-          <p className='about-text'>After working in finance and project management related roles for over 14 years, I decided to leave my safe but ultimately unfulfilling career and drop everything to jump into the world of tech.</p>
+          <p className='about-text'>After working in finance and project management related roles for over 14 years, I decided to drop everything to jump into the world of tech.</p>
           <p className='about-text'>I was fortunate enough to be accepted onto the School of Code bootcamp in April 2022 and in 16 weeks went from beginner to full-stack developer.</p>
           <p className='about-text'>This is just the start of my tech journey but I'm excited to explore a career where I will build things I can be proud of.</p>
         </div>
