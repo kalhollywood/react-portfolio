@@ -3,20 +3,20 @@
     {
       "cover": "/portfolio/1/turnup1.png",
       "title": "Turn Up",
-      "description": "React, JSX, etc",
-      "url": "http://google.com"
+      "description": "Deployed full-stack application",
+      "url": "https://github.com/kalhollywood/final-project_front-end-slack-ops"
     },
     {
-      "cover": "/portfolio/1/turnup1.png",
-      "title": "Turn Up",
-      "description": "React, JSX, etc",
-      "url": "http://google.com"
+      "cover": "/portfolio/2/w9proj.png",
+      "title": "SoC Resource App",
+      "description": "Our week 9 project",
+      "url": "https://github.com/kalhollywood/w9_frontend-project-the-4-thinkers"
     },
     {
-      "cover": "/portfolio/1/turnup1.png",
-      "title": "Turn Up",
-      "description": "React, JSX, etc",
-      "url": "http://google.com"
+      "cover": "/portfolio/3/weather.png",
+      "title": "Weather App",
+      "description": "GeoDB Cities and OpenWeather API",
+      "url": "https://github.com/kalhollywood/weather-app"
     }
   ]
 }

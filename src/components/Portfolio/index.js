@@ -14,6 +14,7 @@ const Portfolio = () => {
     }, 3000)
   }, [])
 
+
   const renderPortfolio = (portfolio) => {
     return (
       <div className="images-container">
@@ -27,7 +28,7 @@ const Portfolio = () => {
                     {port.title}
                   </p>
                   <h4 className="description">{port.description}</h4>
-                  <button className="btn" onClick={window.open(port.url)}>View</button>
+                  <button className="btn" onClick={() => window.open(port.url)}>View</button>
                 </div>
               </div>
 
