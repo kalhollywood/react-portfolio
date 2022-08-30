@@ -9,6 +9,7 @@
   overflow: hidden;
 }
 
+// Sets the animation style
 .cubespinner {
   animation-name: spincube;
   animation-timing-function: ease-in-out;
@@ -18,6 +19,7 @@
   transform-origin: 100px 100px 0;
   margin-left: calc(50% - 100px);
 
+  // This div creates the effect of each side of the cube
   div {
     position: absolute;
     width: 200px;
@@ -31,6 +33,8 @@
     align-items: center;
     box-shadow: 0 0 20px 0px lightyellow;
   }
+
+  // This section below creates the cube effect by positioning each of the 2d squares with their icon and spaces them out/rotates them
 
   .face1 {
     transform: translateZ(100px);
@@ -52,6 +56,7 @@
   }
 }
 
+// This section below creates the ainmated spinning cube effect
 @keyframes spincube {
   from,
   to {
