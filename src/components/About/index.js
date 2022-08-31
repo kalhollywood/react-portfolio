@@ -38,7 +38,7 @@ const About = () => {
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
             </div>
             <div className="face2">
-              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+              <FontAwesomeIcon icon={faCss3} color="#28A4D9" style={{ transform: "rotateZ(270deg)" }} />
             </div>
             <div className="face3">
               <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
