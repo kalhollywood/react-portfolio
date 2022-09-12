@@ -9,7 +9,7 @@ const Home = () => {
 
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = [" ", "K", "a", "l"]
-  const jobArray = "Full-stack Developer".split('')
+  const jobArray = `Full-stack Developer`.split('')
 
   useEffect(() => {
     setTimeout(() => {

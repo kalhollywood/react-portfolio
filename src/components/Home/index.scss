@@ -87,6 +87,9 @@ h2 {
   }
 
   .home-page {
+    .h1 {
+      overflow-wrap: normal;
+    }
     .text-zone {
       position: initial;
       width: 100%;
