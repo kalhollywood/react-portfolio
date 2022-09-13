@@ -13,4 +13,5 @@ I did this project as I wanted to learn about Sass and improve my CSS skills. It
 ## Challenges
 
 - Also not mentioned in the tutorial was the fact that React router dom has a bug when run with the latest version of React (18.2.0) which meant that the routes were not working and the home page component was stuck behind the sidebar component.
-- Logo rotation on cube
+- Logo rotation on cube took a lot of tweaking to ensure panels displayed as a cube and in the right orientation
+- Adapting for mobile responsiveness was difficult, particularly with the contact form
