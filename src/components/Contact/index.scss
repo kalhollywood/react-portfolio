@@ -83,20 +83,18 @@
 
 @media screen and (max-width: 1200px) {
   .contact-form {
-    position: relative;
+    position: absolute;
+    min-width: 350px;
+    // margin-left: 0px;
+    // margin-right: 15px;
   }
-
-  .textzone {
-    position: relative;
-    width: 250px;
-  }
-  .textarea {
-    font-size: 8px;
-  }
-
   ul {
-    li.half {
+    li {
       width: 100%;
+      margin-right: 10px;
+    }
+    li.half {
+      margin-left: 20px;
     }
   }
 }
