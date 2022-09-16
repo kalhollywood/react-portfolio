@@ -104,6 +104,9 @@ h2 {
       margin: 20px auto 0 auto;
       width: 125px;
     }
+    .flat-button:active {
+      transform: translateY(-5px);
+    }
 
     .logo-container {
       position: relative;
