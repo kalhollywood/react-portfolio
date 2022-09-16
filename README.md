@@ -1,7 +1,7 @@
 # Portfolio Project (Draft)
 
 For this project I used [this tutorial](http://www.youtube.com) from freeCodeCamp with my own slight modifications.
-I did this project as I wanted to learn about Sass and improve my CSS skills. It's deployed to Netlify [here](https://glittering-kataifi-784b3f.netlify.app/).
+I did this project as I wanted to learn about Sass and improve my CSS skills. It's deployed to Netlify [here](https://kals-portfolio.netlify.app/).
 
 ## Key learnings
 
