@@ -19,7 +19,7 @@
   }
 }
 
-// Assigns an index to each character in the heading string and iterates through adding an animation delay to give rolling animation effect.
+// Assigns an index to each character in the heading array and iterates through adding an animation delay to give rolling animation effect.
 @for $i from 1 through 38 {
   .text-animate._#{$i} {
     animation-delay: #{$i / 15}s;
