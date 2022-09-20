@@ -10,6 +10,7 @@ const About = () => {
 
   const [letterClass, setLetterClass] = useState('text-animate')
 
+  // This useEffect changes the css class for the heading letters after 3 seconds to allow for the rolling animation to finish and then set it to the hover rubber band effect.
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
@@ -22,6 +23,7 @@ const About = () => {
       <div className="container about-page">
         <div className="text-zone">
           <h1>
+            {/* This component passes down the letterClass state and the string to map through each letter, the index is set to 15 to give it a 1.5sec delay before starting */}
             <AnimatedLetters
               letterClass={letterClass}
               strArray={"About Me".split("")}

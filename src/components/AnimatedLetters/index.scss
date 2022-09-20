@@ -1,3 +1,4 @@
+// This is the inital class set by the useState for the heading
 .text-animate {
   display: inline-block;
   opacity: 0;
@@ -6,6 +7,7 @@
   min-width: 10px;
 }
 
+// This is the class the heading is set to once the timeout of 3secs has elapsed
 .text-animate-hover {
   min-width: 10px;
   display: inline-block;
@@ -17,8 +19,9 @@
   }
 }
 
+// Assigns an index to each character in the heading string and iterates through adding an animation delay to give rolling animation effect.
 @for $i from 1 through 38 {
   .text-animate._#{$i} {
-    animation-delay: #{$i / 15}s;
+    animation-delay: #{$i / 10}s;
   }
 }

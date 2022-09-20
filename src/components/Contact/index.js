@@ -8,16 +8,16 @@ const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const form = useRef()
 
+  // This useEffect changes the css class for the heading letters after 3 seconds to allow for the rolling animation to finish and then set it to the hover rubber band effect.
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
-      console.log("hello")
     }, 3000)
   }, [])
 
+  // This function handles the emailJS contact form submission
   const sendEmail = async (e) => {
     e.preventDefault()
-
     await emailjs.sendForm("service_8f8da4e", "template_oiobccy", form.current, '1bEXXNm7c17bivL1q').then(
       () => {
         alert('Message sent')
@@ -34,6 +34,7 @@ const Contact = () => {
       <div className='container contact-form'>
         <div className='text-zone'>
           <h1>
+            {/* This component passes down the letterClass state and the string to map through each letter, the index is set to 15 to give it a 1.5sec delay before starting */}
             <AnimatedLetters
               letterClass={letterClass}
               strArray={"Contact Me".split("")}
