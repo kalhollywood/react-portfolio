@@ -9,6 +9,7 @@ const Layout = () => {
       <div className="page">
         <span className='tags top-tags'>&lt;body&gt;</span>
 
+        {/* The Outlet component enables nested UI to be visible when child routes are rendered. */}
         <Outlet />
 
         <span className='tags bottom-tags'>

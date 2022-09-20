@@ -7,7 +7,7 @@ import portfolioData from '../../data/portfolio.json';
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  console.log(portfolioData)
+  // This useEffect changes the css class for the heading letters after 3 seconds to allow for the rolling animation to finish and then set it to the hover rubber band effect.
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
@@ -18,6 +18,8 @@ const Portfolio = () => {
   const renderPortfolio = (portfolio) => {
     return (
       <div className="images-container">
+
+        {/* The code below maps through a portfolioData object with the details of each project, title, image etc can then be rendered and an associated link attached to the button for each project taking the user to the github page. */}
         {
           portfolio.map((port, idx) => {
             return (
@@ -44,12 +46,14 @@ const Portfolio = () => {
     <>
       <div className="container portfolio-page">
         <h1 className="page-title">
+          {/* This component passes down the letterClass state and the string to map through each letter, the index is set to 15 to give it a 1.5sec delay before starting */}
           <AnimatedLetters
             letterClass={letterClass}
             strArray={"Projects".split("")}
             idx={15}
           />
         </h1>
+        {/* Line below calls the renderPortfolio function and passes in the object.portfolio */}
         <div>{renderPortfolio(portfolioData.portfolio)}</div>
 
 

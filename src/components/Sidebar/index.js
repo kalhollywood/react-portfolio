@@ -2,13 +2,12 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBars, faClose, faEnvelope, faHome, faSuitcase, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './index.scss';
-// import LogoS from '../../assets/images/logo-s.png'
-// import LogoSubtitle from '../../assets/images/logo_sub.png'
 
 const Sidebar = () => {
 
+  // This useState
   const [showNav, setShowNav] = useState(false);
 
   function handleClick() {
@@ -18,10 +17,7 @@ const Sidebar = () => {
 
   return (
     <div className="nav-bar">
-      <Link className='logo' to='/'>
-        {/* <img src={LogoS} alt="logo" />
-        <img className='sub-logo' src={LogoSubtitle} alt="kal" /> */}
-      </Link>
+      {/* Mobile responsive - if showNav is set to true, mobile-show class will be enabled otherwise defaults */}
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink
           onClick={() => setShowNav(false)} exact="true" activeclassname="active" to="/">
@@ -60,7 +56,7 @@ const Sidebar = () => {
         </li>
       </ul>
       <FontAwesomeIcon
-        // onClick={() => setShowNav(true)}
+
         icon={faBars}
         color="#ffd700"
         size="3x"
