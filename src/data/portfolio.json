@@ -17,6 +17,12 @@
       "title": "Weather App",
       "description": "GeoDB Cities and OpenWeather API",
       "url": "https://github.com/kalhollywood/weather-app"
+    },
+    {
+      "cover": "/portfolio/4/shop.png",
+      "title": "E-commerce site",
+      "description": "NextJS, Sanity, Stripe and Vercel",
+      "url": "https://github.com/kalhollywood/nextjs_shop"
     }
   ]
 }
